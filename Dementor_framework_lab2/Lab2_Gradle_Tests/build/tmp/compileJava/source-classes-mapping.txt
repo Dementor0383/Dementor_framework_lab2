@@ -1,0 +1,8 @@
+com/github/Dementor0383/tests/TestMyTesterSecondClass.java
+ com.github.Dementor0383.tests.TestMyTesterSecondClass
+Main.java
+ Main
+com/github/Dementor0383/tests/TestMyTester.java
+ com.github.Dementor0383.tests.TestMyTester
+com/github/Dementor0383/tests/TokenType.java
+ com.github.Dementor0383.tests.TokenType

@@ -210,6 +210,7 @@ public class Asserts {
     //
     static String formatOfMessage(String failLine, Object expected, Object actual) {
         String message = "";
+        // CR: why not ternary?
         if (failLine != null && !failLine.equals("")) {
             message = failLine + " ";
         }
@@ -231,6 +232,7 @@ public class Asserts {
         return className + " value is <" + valueLine + ">!";
     }
 
+    // CR: why private static got swapped?
     static private boolean doubleCompare(double d1, double d2, double errorRate) {
         if (Double.compare(d1, d2) == 0) {//возвращает 0, если d1 и d2 численно равны
             return false;
@@ -243,6 +245,8 @@ public class Asserts {
         if (Float.compare(f1, f2) == 0) {//возвращает 0, если d1 и d2 численно равны
             return false;
         }
+        // CR: what's the reason to have compare before and not just use Math.abs...?
+        // CR: if there's a reason please add a comment about it
         //считает погрешность
         return !((Math.abs(f1 - f2)) <= errorRate);
     }

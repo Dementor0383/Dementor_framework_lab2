@@ -9,6 +9,7 @@ public class FrameworkException extends RuntimeException {
         super(failLine);
     }
 
+    // CR: why do you need this constructor if you don't use it?
     public FrameworkException(Object faiLine) {
         this(String.valueOf(faiLine));
         if (faiLine instanceof Throwable)

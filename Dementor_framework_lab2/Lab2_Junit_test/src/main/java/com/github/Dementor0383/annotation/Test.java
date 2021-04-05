@@ -10,7 +10,9 @@ import java.lang.annotation.Target;
 @Target({ElementType.METHOD})
 public @interface Test {
 
+    // CR: please fix all warnings
     static class None extends Throwable {
+        // CR: why do you need serialization here?
         private static final long serialVersionUID = 1L;
 
         private None() {
@@ -19,5 +21,6 @@ public @interface Test {
 
     Class<? extends Throwable> expected() default None.class;
 
+    // CR: not used
     long timeout() default 0L;
 }

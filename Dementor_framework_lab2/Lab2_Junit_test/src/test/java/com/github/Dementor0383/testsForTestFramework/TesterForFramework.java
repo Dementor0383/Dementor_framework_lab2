@@ -26,6 +26,7 @@ public class TesterForFramework {
     public void testFailArrayAssert() {
         int[] actualArray = new int[3];
         int[] expectedArray = new int[3];
+        // CR: int[] actualArray = {1, 2, 3}
         actualArray[0] = 1;
         actualArray[1] = 2;
         actualArray[2] = 3;
@@ -69,6 +70,7 @@ public class TesterForFramework {
         JavaCompiler javaCompiler = ToolProvider.getSystemJavaCompiler();
         javaCompiler.run(null, null, null, fileToLoad.toString());
 
+        // CR: all class initailization can be moved to utils method
         URLClassLoader classLoader = new URLClassLoader(new URL[]{testDataDir.toURI().toURL()});
         Class<?> privateBefore = Class.forName("PrivateBefore", true, classLoader);
 
@@ -86,6 +88,7 @@ public class TesterForFramework {
         URLClassLoader classLoader = new URLClassLoader(new URL[]{testDataDir.toURI().toURL()});
         Class<?> privateTest = Class.forName("PrivateTest", true, classLoader);
 
+        // CR: and how do you determine that your test wasn't invoked?
         TestRunner.testRunner(privateTest);
     }
 

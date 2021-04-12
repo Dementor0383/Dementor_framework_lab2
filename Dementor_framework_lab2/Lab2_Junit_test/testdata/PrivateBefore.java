@@ -9,7 +9,12 @@ public class PrivateBefore {
     }
 
     @Test
-    public void test() {
+    public void testPrivateBefore() {
+        // do nothing is ok
+    }
+
+    @Test
+    public void testPrivateBeforeTwo() {
         // do nothing is ok
     }
 

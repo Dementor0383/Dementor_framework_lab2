@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="0" name="com.github.Dementor0383.testsForTestFramework.TesterForFramework" time="1.343" errors="0" skipped="0">
+<testsuite tests="20" failures="0" name="com.github.Dementor0383.testsForTestFramework.TesterForFramework" time="1.864" errors="0" skipped="0">
   <properties>
-    <property name="idea.version" value="2020.3.3"/>
+    <property name="idea.version" value="2021.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="15.0.2+7-27"/>
     <property name="sun.boot.library.path" value="/home/dementor/.jdks/openjdk-15.0.2/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/dementor/Programming/2 курс/2 семестр/OOP_Java/Labs/Lab2_Junit_test"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/dementor/Programming/OOP_Java_GitHub/Dementor_framework_Lab2/Dementor_framework_lab2/Lab2_Junit_test"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -14,7 +14,7 @@
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/dementor/Programming/2 курс/2 семестр/OOP_Java/Labs/Lab2_Junit_test"/>
+    <property name="user.dir" value="/home/dementor/Programming/OOP_Java_GitHub/Dementor_framework_Lab2/Dementor_framework_lab2/Lab2_Junit_test"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="15.0.2+7-27"/>
     <property name="os.arch" value="amd64"/>
@@ -23,11 +23,11 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="maven.ext.class.path" value="/snap/intellij-idea-community/289/plugins/maven/lib/maven-event-listener.jar"/>
-    <property name="classworlds.conf" value="/snap/intellij-idea-community/289/plugins/maven/lib/maven3/bin/m2.conf"/>
+    <property name="maven.ext.class.path" value="/snap/intellij-idea-community/293/plugins/maven/lib/maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="/snap/intellij-idea-community/293/plugins/maven/lib/maven3/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
-    <property name="maven.conf" value="/snap/intellij-idea-community/289/plugins/maven/lib/maven3/conf"/>
+    <property name="maven.conf" value="/snap/intellij-idea-community/293/plugins/maven/lib/maven3/conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="59.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -38,10 +38,10 @@
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="15"/>
     <property name="user.name" value="dementor"/>
-    <property name="java.class.path" value="/snap/intellij-idea-community/289/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar:/snap/intellij-idea-community/289/plugins/maven/lib/maven3/boot/plexus-classworlds.license"/>
+    <property name="java.class.path" value="/snap/intellij-idea-community/293/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar:/snap/intellij-idea-community/293/plugins/maven/lib/maven3/boot/plexus-classworlds.license"/>
     <property name="java.vm.specification.version" value="15"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2020.3.3 install"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.1 install"/>
     <property name="java.home" value="/home/dementor/.jdks/openjdk-15.0.2"/>
     <property name="user.language" value="ru"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -49,18 +49,31 @@
     <property name="java.version" value="15.0.2"/>
     <property name="securerandom.source" value="file:/dev/./urandom"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/snap/intellij-idea-community/289/plugins/maven/lib/maven3"/>
+    <property name="maven.home" value="/snap/intellij-idea-community/293/plugins/maven/lib/maven3"/>
     <property name="file.separator" value="/"/>
     <property name="java.version.date" value="2021-01-19"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
   </properties>
-  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testArrayCharAssert" time="0.042"/>
-  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testOnlyPublicTestCalled" time="0.987"/>
-  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testThrowsForDifferentObject" time="0"/>
-  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testOnlyPublicAfterCalled" time="0.171"/>
-  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testFailArrayAssert" time="0.001"/>
+  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testThrowsForObjectTwo" time="0.006"/>
+  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testPrivateStatic" time="1.034"/>
+  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testStringArrayAssert" time="0.015"/>
+  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testThrowsForDifferentDouble" time="0.006"/>
+  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testThrowsForObject" time="0"/>
+  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testArrayCharAssert" time="0.002"/>
+  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testOnlyPublicTestCalled" time="0.159"/>
+  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testThrowsForArrayFloat" time="0.001"/>
+  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testThrowsForDifferentObject" time="0.001"/>
+  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testThrowsForDifferentDoubleWithoutErrorRate" time="0"/>
+  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testThrowsForDifferentDoubleTwo" time="0.001"/>
+  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testOnlyPublicAfterCalled" time="0.139"/>
+  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testFailArrayAssert" time="0"/>
   <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testArrayAssert" time="0"/>
-  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testOnlyPublicBeforeCalled" time="0.142"/>
+  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testThrowsForArrayObject" time="0.001"/>
+  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testOnlyPublicBeforeCalled" time="0.176"/>
+  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testOnlyWithoutArgumentsTest" time="0.163"/>
+  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testThrowsForDifferentFloat" time="0.001"/>
+  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testThrowsForDifferentFloatTwo" time="0.002"/>
+  <testcase classname="com.github.Dementor0383.testsForTestFramework.TesterForFramework" name="testPrivateFinal" time="0.157"/>
 </testsuite>

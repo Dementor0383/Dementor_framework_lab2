@@ -42,40 +42,22 @@ public class TestMyTester {
 
     @Test
     public void testArrayAssert() {
-        int[] actualArray = new int[3];
-        int[] expectedArray = new int[3];
-        actualArray[0] = 1;
-        actualArray[1] = 2;
-        actualArray[2] = 3;
-        expectedArray[0] = 1;
-        expectedArray[1] = 2;
-        expectedArray[2] = 3;
+        int[] actualArray = {1, 2, 3};
+        int[] expectedArray = {1, 2, 3};
         Asserts.assertArrayEquals(expectedArray, actualArray);
     }
 
     @Test
     public void testFailArrayAssert() {
-        int[] actualArray = new int[3];
-        int[] expectedArray = new int[3];
-        actualArray[0] = 1;
-        actualArray[1] = 2;
-        actualArray[2] = 3;
-        expectedArray[0] = 0;
-        expectedArray[1] = 2;
-        expectedArray[2] = 3;
+        int[] actualArray = {1, 2, 3};
+        int[] expectedArray = {0, 2, 3};
         Asserts.assertArrayEquals("Not equals arrays", expectedArray, actualArray);
     }
 
     @Test
     public void testWithoutFailLineFailArrayAssert() {
-        int[] actualArray = new int[3];
-        int[] expectedArray = new int[3];
-        actualArray[0] = 1;
-        actualArray[1] = 2;
-        actualArray[2] = 3;
-        expectedArray[0] = 0;
-        expectedArray[1] = 2;
-        expectedArray[2] = 3;
+        int[] actualArray = {1, 2, 3};
+        int[] expectedArray = {0, 2, 3};
         Asserts.assertArrayEquals(expectedArray, actualArray);
     }
 
@@ -91,27 +73,29 @@ public class TestMyTester {
 
     @Test
     public void testAssertObjectArray() {
-        TokenType[] expectedArray = new TokenType[3];
-        TokenType[] actualArray = new TokenType[3];
-        actualArray[0] = TokenType.EOF;
-        actualArray[1] = TokenType.TESTCASE;
-        actualArray[2] = TokenType.AT;
-        expectedArray[0] = TokenType.EOF;
-        expectedArray[1] = TokenType.EOL;
-        expectedArray[2] = TokenType.TEST_SUITE;
+        TokenType[] expectedArray = {TokenType.EOF, TokenType.TESTCASE, TokenType.AT};
+        TokenType[] actualArray = {TokenType.EOF, TokenType.EOL, TokenType.TEST_SUITE};
         Asserts.assertArrayEquals(expectedArray, actualArray);
     }
 
     @Test
     private void testPrivateAssertObjectArray() {
-        TokenType[] expectedArray = new TokenType[3];
-        TokenType[] actualArray = new TokenType[3];
-        actualArray[0] = TokenType.EOF;
-        actualArray[1] = TokenType.TESTCASE;
-        actualArray[2] = TokenType.AT;
-        expectedArray[0] = TokenType.EOF;
-        expectedArray[1] = TokenType.EOL;
-        expectedArray[2] = TokenType.TEST_SUITE;
+        TokenType[] expectedArray = {TokenType.EOF, TokenType.TESTCASE, TokenType.AT};
+        TokenType[] actualArray = {TokenType.EOF, TokenType.EOL, TokenType.TEST_SUITE};
         Asserts.assertArrayEquals(expectedArray, actualArray);
+    }
+
+    @Test
+    private static void testPrivateStaticAssertObjectArray() {
+        TokenType[] expectedArray = {TokenType.EOF, TokenType.TESTCASE, TokenType.AT};
+        TokenType[] actualArray = {TokenType.EOF, TokenType.EOL, TokenType.TEST_SUITE};
+        Asserts.assertArrayEquals(expectedArray, actualArray);
+    }
+
+    @Test
+    public void testThrowsForArrayFloat() {
+        double[] expectedArray = {1.234, 1.237, 1.239};
+        double[] actualArray = {1.235, 1.233, 1.236};
+        Asserts.assertArrayEquals(expectedArray, actualArray, 0.05);
     }
 }

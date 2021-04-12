@@ -10,7 +10,12 @@ public class PrivateAfter {
     }
 
     @Test
-    public void test() {
+    public void testPrivateAfter() {
+        System.out.println("Loading test");
+    }
+
+    @Test
+    public void testPrivateAfterTwo() {
         System.out.println("Loading test");
     }
 
